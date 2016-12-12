@@ -2,12 +2,142 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>Document</title>
+	<title>HOME</title>
 </head>
 <body>
-	<p>Hello World</p>
+
+	<div class="container">
+		<ul class="nav nav-tabs">
+			<li><%= link_to "Home", navbar_Home_path %></li>
+			<li><%= link_to "Reservation", navbar_About_path %></li>
+			<li><%= link_to "Room", navbar_About_path %></li>
+			<li><%= link_to "Facilities", navbar_About_path %></li>
+			<li><%= link_to "About", navbar_About_path %></li>
+			<li><%= link_to "Contact", navbar_Contact_path %></li> 	 			
+		</ul>
+		<br>
+
+		<div id="my-slider" class="carousel slide" data-ride= "carousel">
+			<!--- indicators dot nov -->
+			<ol class="carousel-indicators">
+				<li data-target="#my-slider" data-slide-to="0" class="active"></li>
+				<li data-target="#my-slider" data-slide-to="1" class=""></li>
+				<li data-target="#my-slider" data-slide-to="2" class=""></li>
+
+
+			</ol>
+			<!-- wrapper for slides -->
+			<div class="carousel-inner" roles="listbox">
+				<div class="item active">
+					<img src="assets/room1.jpg" alt="room" />
+					<div class="carousel-caption">
+						<h2>Luxury Room</h2>
+					</div>
+				</div>
+
+				<div class="item">
+					<img src="assets/room2.jpg" alt="room" />
+					<div class="carousel-caption">
+						<h2>Luxury Room 2</h2>
+					</div>
+				</div>
+
+			<div class="item">
+					<img src="assets/room3.jpg" alt="room" />
+					<div class="carousel-caption">
+						<h2>Luxury Room 3</h2>
+					</div>
+				</div>
+			</div>
+
+			<!-- controls for next and prev button -->	
+			<a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+				<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+			<a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+				<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+				<span class="sr-only">Previous</span>
+			</a>
+
+
+		</div>
+			<!-- TEXT -->
+			<div class="flow-text">
+			<h1><font color="#256670"> START BOOKING YOUR ROOM</h1>
+			<h1><font color="#beccce"> SELECT YOUR DATAES AND OPTIONS BELOW</h1>
+			</div>
+
+			<div>
+				<!------ CALENDER ------>
+				CALENDER HERE THEN OK LIAO
+			</div>
+
+		</div>
+
+
+
+	<div class="container">
+    <section style="height:80px;"></section>
 	
-	<a class="btn btn-primary" href="#">test</a>
+    <!----------- Footer ------------>
+    <footer class="footer-bs">
+        <div class="row">
+        	<div class="col-md-3 footer-brand animated fadeInLeft">
+            	<h3>RIP-CITY HOTEL</h3>
+                <p> Address: 2247 Copperhead Road, Hartford, CT 06103</p>
+
+					<p>Tel: +860-631-7795</p>
+					<p>Fax: +860-631-7796</p> 
+					<p>Email: admin@gmail.com</p>
+                <p>© 2016 HARAMBE, All rights reserved</p>
+            </div>
+        	<div class="col-md-4 footer-nav animated fadeInUp">
+            	<h3>SPECIAL OFFER</h3>
+            	<div class="col-md-6">
+                    <ul class="pages">
+                        <li><a href="#">Travel</a></li>
+                        <li><a href="#">Nature</a></li>
+                        <li><a href="#">Explores</a></li>
+                        <li><a href="#">Science</a></li>
+                        <li><a href="#">Advice</a></li>
+                    </ul>
+                </div>
+            	<div class="col-md-6">
+                    <ul class="list">
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contacts</a></li>
+                        <li><a href="#">Terms & Condition</a></li>
+                        <li><a href="#">Privacy Policy</a></li>
+                    </ul>
+                </div>
+            </div>
+        	<div class="col-md-2 footer-social animated fadeInDown">
+            	<h4>Follow Us</h4>
+            	<ul>
+                	<li><a href="#">Facebook</a></li>
+                	<li><a href="#">Twitter</a></li>
+                	<li><a href="#">Instagram</a></li>
+                	<li><a href="#">RSS</a></li>
+                </ul>
+            </div>
+        	<div class="col-md-3 footer-ns animated fadeInRight">
+            	<h4>Newsletter</h4>
+                <p>A rover wearing a fuzzy suit doesn’t alarm the real penguins</p>
+                <p>
+                    <div class="input-group">
+                      <input type="text" class="form-control" placeholder="Search for...">
+                      <span class="input-group-btn">
+                        <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope"></span></button>
+                      </span>
+                    </div><!-- /input-group -->
+                 </p>
+            </div>
+        </div>
+    </footer>
+
+</div>
+	</div>
 
 </body>
 </html>

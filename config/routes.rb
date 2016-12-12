@@ -1,4 +1,12 @@
 Rails.application.routes.draw do
+  get 'navbar/Home'
+
+  get 'navbar/About'
+
+  get 'navbar/Contact'
+
+  get 'navbar/Facilities'
+
   get 'welcome/index'
 
   root 'welcome#index'
