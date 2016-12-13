@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+</head>
+<body>
+	<div>
+		<ul class="nav nav-tabs">
+  			<li role="presentation"><%= link_to "Dashboard", staff_dashboard_path %></li>
+ 			<li role="presentation"><%= link_to "Check In", staff_checkin_path %></li>
+  			<li role="presentation"><%= link_to "Check Out", staff_checkout_path %></li>
+  			<li role="presentation"><%= link_to "Payment", staff_payment_path %></li>
+  			<li role="presentation" class="active"><%= link_to "Room Modification", staff_roommodification_path %></li>
+
+		</ul>
+
+
+	</div>
+
+	    		<nav class="navbar navbar-default navbar-static-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							WELCOME TO RIP-CITY
+						</a>
+					</div>			
+						<ul class="nav navbar-nav navbar-right">
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</li>
+						</div>
+					</div>
+				</nav>
+
+				<div class="container">
+	<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Room Modification</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="textinput">Room ID</label>  
+  <div class="col-md-4">
+  <input name="textinput" class="form-control input-md" id="textinput" type="text" placeholder="Room ID">
+  
+  </div>
+</div>
+
+
+<!-- Select Basic -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="selectbasic">Room Type</label>
+  <div class="col-md-4">
+    <select name="selectbasic" class="form-control" id="selectbasic">
+      <option value="1">Single</option>
+      <option value="2">Double</option>
+      <option value="3">Triple</option>
+      <option value="4">Luxury</option>
+    </select>
+  </div>
+</div>
+
+<!-- Button (Double) -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="button1id"></label>
+  <div class="col-md-8">
+    <button name="button1id" class="btn btn-success" id="button1id">Create</button>
+    <button name="button2id" class="btn btn-danger" id="button2id">Delete</button>
+  </div>
+</div>
+
+</fieldset>
+</form>
+
+</div>

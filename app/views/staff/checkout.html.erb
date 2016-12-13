@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Dashboard</title>
+</head>
+<body>
+	<div>
+		<ul class="nav nav-tabs">
+  			<li role="presentation"><%= link_to "Dashboard", staff_dashboard_path %></li>
+ 			<li role="presentation"><%= link_to "Check In", staff_checkin_path %></li>
+  			<li role="presentation" class="active"><%= link_to "Check Out", staff_checkout_path %></li>
+  			<li role="presentation"><%= link_to "Payment", staff_payment_path %></li>
+  			<li role="presentation"><%= link_to "Room Modification", staff_roommodification_path %></li>
+
+		</ul>
+
+
+	</div>
+
+	    		<nav class="navbar navbar-default navbar-static-top">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+							<span class="sr-only">Toggle navigation</span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<a class="navbar-brand" href="#">
+							WELCOME TO RIP-CITY
+						</a>
+					</div>			
+						<ul class="nav navbar-nav navbar-right">
+										<li><a href="#">Logout</a></li>
+									</ul>
+								</li>
+						</div>
+					</div>
+				</nav>
+
+<form class="form-horizontal">
+<fieldset>
+
+<!-- Form Name -->
+<legend>Check Out</legend>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="name">Name</label>  
+  <div class="col-md-4">
+  <input id="name" name="name" type="text" placeholder="Enter name" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="city">Room ID</label>  
+  <div class="col-md-4">
+  <input id="city" name="city" type="text" placeholder="Enter your Room ID" class="form-control input-md" required="">
+    
+  </div>
+</div>
+
+
+
+<!-- Button -->
+<div class="form-group">
+  <label class="col-md-4 control-label" for="signup"></label>
+  <div class="col-md-4">
+    <button id="signup" name="signup" class="btn btn-success">Check Out</button>
+  </div>
+</div>
+
+</fieldset>
+</form>

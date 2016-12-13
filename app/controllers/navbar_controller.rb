@@ -11,4 +11,10 @@ class NavbarController < ApplicationController
   def Facilities
   	
   end
+  def Rooms
+  	
+  end
+  def Reservation
+  	
+  end
 end

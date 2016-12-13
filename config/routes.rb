@@ -1,4 +1,17 @@
 Rails.application.routes.draw do
+  
+  get 'staff/roommodification'
+
+  get 'staff/dashboard'
+
+  get 'staff/login'
+
+  get 'staff/checkin'
+
+  get 'staff/checkout'
+
+  get 'staff/payment'
+
   get 'navbar/Home'
 
   get 'navbar/About'
@@ -6,6 +19,10 @@ Rails.application.routes.draw do
   get 'navbar/Contact'
 
   get 'navbar/Facilities'
+
+  get 'navbar/Rooms'
+
+  get 'navbar/Reservation'
 
   get 'welcome/index'
 
