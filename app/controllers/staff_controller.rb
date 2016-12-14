@@ -17,4 +17,8 @@ class StaffController < ApplicationController
   def roommodification
     
   end
+  def report
+
+    
+  end
 end

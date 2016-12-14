@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'staff/report'
+
   get 'staff/roommodification'
 
   get 'staff/dashboard'
