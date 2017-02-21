@@ -3,6 +3,9 @@ class StaffController < ApplicationController
   end
 
   def login
+    if logged_in?
+      redirect_to staff_dashboard_url
+    end
   end
 
   def checkin
@@ -15,10 +18,8 @@ class StaffController < ApplicationController
   end
 
   def roommodification
-    
   end
-  def report
 
-    
+  def report
   end
 end
