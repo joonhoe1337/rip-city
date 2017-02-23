@@ -11,11 +11,23 @@ class BookingController < ApplicationController
   def create
     session[:booking].deep_merge!(params[:booking])
     booking = Booking.new(session[:booking])
+    
+    reservation_id = gen_reservation_id(booking)
+    while Booking.find_by(reservation_id: reservation_id)
+      reservation_id = gen_reservation_id(booking)
+    end
+    booking.update_attribute(:reservation_id, reservation_id)
+   
     booking.update_attribute(:status, 0)
+
     if booking.save
     else
     end
     redirect_to root_url
+  end
+
+  def gen_reservation_id(booking)
+    booking.room_type.upcase[0,3] + "-" + rand(10 ** 7).to_s
   end
 
   def booking_params
