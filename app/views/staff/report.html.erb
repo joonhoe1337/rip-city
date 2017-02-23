@@ -12,7 +12,7 @@
   			<li role="presentation"><%= link_to "Check Out", staff_checkout_path %></li>
   			<li role="presentation"><%= link_to "Payment", staff_payment_path %></li>
   			<li role="presentation"><%= link_to "Room Modification", staff_roommodification_path %></li>
-  			<li role="presentation" " class="active"><%= link_to "Report", staff_report_path %></li>
+  			<li role="presentation" class="active"><%= link_to "Report", staff_report_path %></li>
 
 		</ul>
 
@@ -33,9 +33,10 @@
 						</a>
 					</div>			
 						<ul class="nav navbar-nav navbar-right">
-										<li><a href="#">Logout</a></li>
-									</ul>
-								</li>
+              <li>
+                <%= link_to "Logout", logout_path %>
+              </li>
+						</ul>
 						</div>
 					</div>
 				</nav>
