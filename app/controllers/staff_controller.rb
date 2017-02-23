@@ -12,15 +12,19 @@ class StaffController < ApplicationController
   end
 
   def checkin
+    @booking = Booking.new()
+    @rooms = Room.all
   end
 
   def checkout
+    @rooms = Room.all
   end
 
   def payment
   end
 
   def roommodification
+    @rooms = Room.all
   end
 
   def report

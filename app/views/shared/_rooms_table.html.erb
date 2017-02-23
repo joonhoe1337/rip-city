@@ -1,0 +1,16 @@
+<table class="table">
+  <tr>
+    <th>Room ID</th>
+    <th>Room Type</th>
+    <th>Status</th>
+  </tr>
+  <% @rooms.each do |r| %>
+    <tr>
+      <td><%= r.room_id %></td>
+      <td><%= r.room_type.capitalize %></td>
+      <td class="<%= r.available? ? "text-success" : "text-danger" %>">
+        <%= r.status.capitalize %>
+      </td>
+    </tr>
+  <% end %>
+</table>

@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'room/update'
+
   get 'booking/new'
 
   get 'sessions/new'
@@ -25,5 +27,9 @@ Rails.application.routes.draw do
 
   post 'booking/new'
   post 'booking/create'
+  post 'booking/update'
+  get 'booking/update'
 
+  post 'room/update'
+  post 'room/checkout'
 end
