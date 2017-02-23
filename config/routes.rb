@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
   
+  get 'booking/new'
+
   get 'sessions/new'
 
   get 'staff/report'
@@ -10,17 +12,18 @@ Rails.application.routes.draw do
   get 'staff/checkout'
   get 'staff/payment'
 
-  get 'navbar/Home'
   get 'navbar/About'
   get 'navbar/Contact'
   get 'navbar/Facilities'
   get 'navbar/Rooms'
   get 'navbar/Reservation'
 
-  get 'welcome/index'
   root 'welcome#index'
 
   post 'login' => 'sessions#create'
+  get 'logout' => 'sessions#destroy'
 
-  # For details on the DSL available within this file, see http://guides.rubyonrails.org/routing.html
+  post 'booking/new'
+  post 'booking/create'
+
 end
