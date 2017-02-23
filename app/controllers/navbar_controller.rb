@@ -6,6 +6,7 @@ class NavbarController < ApplicationController
   end
 
   def Contact
+
   end
 
   def Facilities
