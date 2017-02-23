@@ -1,0 +1,61 @@
+<%= render 'shared/header' %>
+
+<%= form_for(:booking, url:booking_create_path) do |f| %>
+
+<div class="row">
+  <div class="col-md-9">
+    <div class="row">
+      <h1>Your name</h1>
+      <div class="col-md-6">
+        <%= f.label :name, "Full Name" %>
+        <%= f.text_field :name, class: "form-control" %>
+      </div>
+    </div>
+  
+    <div class="row">
+      <h1>Your contact details</h1>
+      <div class="col-md-6">
+        <%= f.label :email, "Email address" %>
+        <%= f.text_field :email, class: "form-control" %>
+      </div>
+    </div>
+  
+    <div class="row">
+      <h1>Your address</h1>
+      <div class="col-md-6">
+        <%= f.label :address, "Address" %>
+        <%= f.text_area :address, class: "form-control" %>
+      </div>
+    </div>
+  
+    <div class="row">
+      <h1>Any special request?</h1>
+      <div class="col-md-12">
+        <%= f.label :comment, "Comment" %>
+        <%= f.text_area :comment, class: "form-control" %>
+      </div>
+    </div>
+  
+    <%= f.submit "Continue", class: "btn btn-lg" %>
+  </div>
+  
+  <div class="col-md-3">
+    <h2>Your Summary</h2>
+    <h3>Your chosen date are:</h3>
+    <div>
+      <p>Arrival: <%= @booking.checkin_date.strftime('%d-%m-%Y') %></p>
+      <p>Departure: <%= @booking.checkout_date.strftime('%d-%m-%Y') %></p>
+    </div>
+    <h3>Your choosen room is:</h3>
+    <div>
+      <p><%= @booking.room_no %> <%= @booking.room_type.capitalize %> room(s) for 
+        <%= @booking.adult_no %> adult(s) and 
+        <%= @booking.child_no %> child(ren)
+      </p>
+    </div>
+  </div>
+</div>
+
+<% end %>
+
+<%= render 'shared/footer' %>

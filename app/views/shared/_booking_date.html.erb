@@ -1,0 +1,47 @@
+<div class="row">
+  <%= form_for(:booking, url:booking_new_path) do |f| %>
+    <div class="col-md-6">
+      <div>
+        <%= f.label :checkin_date, "Arrive" %>
+        <%= f.text_field :checkin_date, id: "altfield-checkin" %>
+        <div id="datepicker-checkin"></div>
+      </div>
+      
+      <div>
+        <%= f.label :checkout_date, "Depart" %>
+        <%= f.text_field :checkout_date, id: "altfield-checkout" %>
+        <div id="datepicker-checkout"></div>
+      </div>
+    </div>
+  
+    <div class="col-md-6">
+      <div>
+        <%= f.label :room_type, "Room Type" %>
+        <%= f.select(:room_type, options_for_select([["Single Room", "single"],
+                                                ["Double Room", "double"],
+                                                ["Triple Room", "triple"],
+                                                ["Luxury Room", "luxury"]],
+                                                0)) %>
+      </div>
+
+      <div>
+        <%= f.label :room_no, "Rooms" %>
+        <%= f.select(:room_no, options_for_select([1, 2, 3, 4, 5], 1)) %>
+      </div>
+  
+      <div>
+        <%= f.label :adult_no, "Adults" %>
+        <%= f.select(:adult_no, options_for_select([1, 2, 3, 4, 5], 1)) %>
+      </div>
+  
+      <div>
+        <%= f.label :child_no, "Children" %>
+        <%= f.select(:child_no, options_for_select([0, 1, 2, 3, 4, 5], 0)) %>
+      </div>
+
+      <div>
+        <%= f.submit "Book now!", class: "btn btn-lg" %>
+      </div>
+    </div>
+  <% end %>
+</div>

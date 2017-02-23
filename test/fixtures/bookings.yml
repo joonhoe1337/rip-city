@@ -1,0 +1,25 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  checkin_date: 2017-02-22 21:07:03
+  checkout_date: 2017-02-22 21:07:03
+  type: 1
+  adult_no: 1
+  child_no: 1
+  name: MyString
+  email: MyString
+  address: MyString
+  comment: MyString
+  status: 1
+
+two:
+  checkin_date: 2017-02-22 21:07:03
+  checkout_date: 2017-02-22 21:07:03
+  type: 1
+  adult_no: 1
+  child_no: 1
+  name: MyString
+  email: MyString
+  address: MyString
+  comment: MyString
+  status: 1
